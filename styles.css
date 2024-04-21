@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    width: 1200px;
+    padding: 20px 0 20px 0;
+    color:#929493 ;
+}
+.grid_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+    width: 1200px;
+}
+.box {
+    height: 250px;
+    width: 260px;
+    border: 1px solid #E0E4E3;
+    cursor: pointer;
+    transition: transform 0.25s ease;
+}
+.box:hover{
+    transform: scale(1.5);
+}
+.box h4{
+    text-align: center;
+    animation-name: box1;
+}
